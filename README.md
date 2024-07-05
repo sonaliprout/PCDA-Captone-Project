@@ -12,31 +12,41 @@ Model Evaluation: Compare the performance and interpretability of different mach
 **Hypotheses:**
 
 Null Hypothesis (H0): The credit card applicant is a 'good' client. This means that, based on the available data and the trained model, there is no significant evidence to suggest that the applicant will default.
+
 Alternative Hypothesis (H1): The credit card applicant is a 'bad' client. This means that there is significant evidence, based on the model, to suggest that the applicant will default.
 
 **Data Sources:**
 
 application_record.csv: Contains personal and demographic information about credit card applicants.
+
 credit_record.csv: Contains monthly credit status information for each applicant.
 
 **Data Cleaning:**
 
 Handling Missing Values: Used forward fill to handle missing data ensuring no gaps were left.
+
 Outlier Removal: Removed outliers using the IQR method for key columns.
+
 Categorical Encoding: Applied label encoding to transform categorical variables into numerical values.
+
 Handling Duplicates: Managed duplicate IDs to avoid conflicting predictions.
 
 **Exploratory Data Analysis (EDA):**
 
 Initial Exploration: Revealed essential patterns and distributions.
+
 Data Preprocessing: Included data cleansing, handling outliers, feature engineering, correlation analysis, addressing data imbalance, and encoding categorical variables.
 
 **Machine Learning Models:**
 
 Implemented the following models for both binary and multi-class classification:
+
 Logistic Regression
+
 Random Forest
+
 Support Vector Machine (SVM)
+
 XGBoost
 
 **Model Evaluation:**
